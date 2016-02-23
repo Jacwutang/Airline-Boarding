@@ -35,48 +35,31 @@ public:
 	StackAr  <char> right;
 	StackAr  <char> temp;
 
-	//int getRowNumber(Row& row);
-	//	Row& operator=(const Row& r);
-	//void copyStacks(Row& r);
-
-
 	Row() {};
-	// {
-	// 	aisleStatus status = :: empty;
-	// 	swapCount = 0;
-	// } 
+	
 
 	Row(int i) : left(3), right(3), temp(3), swapCount(0), status(::empty)
 	{
 		rowNumber = i;
 		pass.targetNumber = 0;
 		pass.seatLetter = ' ';
-		//aisleStatus status = :: empty;
+	
 	} // default constructor
 };
 
-// void emptyPlane(Queue <row> &planeQueue)
-// {
-
-// 	planeQueue.makeEmpty();
-// }
-
-void changeEnum(Row& row, Row& prow, ifstream& inf) // row = current row, prow = previous row 2,1
+void changeEnum(Row& row, Row& prow, ifstream& inf) 
 {
 	char letter;
 	int number;
 
-	///////////////////////////////////////////////////////////////////////////
+	
 	if (row.status == swapp)
 	{
 		row.swapCount--;
 		if (row.swapCount == 0)
 		{
 			row.status = :: empty;
-			// if ((row.right.isFull() == true) && (row.left.isFull() == true))
-			// {
-			// 	seatedcount++;
-			// }
+		
 		}
 	}//swap
 
@@ -144,8 +127,7 @@ void changeEnum(Row& row, Row& prow, ifstream& inf) // row = current row, prow =
 			if (prow.swapCount == 0)
 			{
 				prow.status = :: empty;
-				// if ((prow.right.isFull() == true) && (prow.left.isFull() == true))
-				// 	boardingCount++;
+			
 			}
 		} // swapp
 
@@ -197,7 +179,7 @@ void changeEnum(Row& row, Row& prow, ifstream& inf) // row = current row, prow =
 			prow.status = transit;
 			boardingCount++;
 		}
-	} // prow.rowNumber == 1
+	} 
 }// change Enum function
 
 
