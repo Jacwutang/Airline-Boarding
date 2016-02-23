@@ -6,4 +6,5 @@ Program calculates time required to board 288 passengers onto a standard jet pla
 2. If aisle ahead is blocked, then the passenger waits until it is clear to move
 3. Sitting down takes 5 seconds (provided that the passenger's seat is not obstructed)
   for example. middle seat passenger gets up for window seat passenger
-4 .Storing luggage takes 10 seconds
+
+4 Storing luggage takes 10 seconds
