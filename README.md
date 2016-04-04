@@ -2,9 +2,13 @@
 
 Program calculates time required to board 288 passengers onto a standard jet plane. Certain behaviors are taken into account:
 
-1. Moving from one aisle to the next one ahead takes 5 seconds (when aisle is not blocked)
-2. If aisle ahead is blocked, then the passenger waits until it is clear to move
-3. Sitting down takes 5 seconds (provided that the passenger's seat is not obstructed)
-  for example. middle seat passenger gets up for window seat passenger
+1) Each previously seated passenger who is seated closer to the aisle than a newly arrived passenger’s assigned seat, must
+leave their seat, and step into the aisle, and then return to their seat after the new passenger has seated herself.
 
-4 Storing luggage takes 10 seconds
+2) Each passenger takes 10 seconds to store their carry-on luggage.
+
+3) When the aisle in the next row is clear, a passenger takes 5 seconds to move to the next row.
+
+4) Getting to or from one’s seat in a row takes 5 seconds
+
+5) No passenger may pass another passenger in an aisle
